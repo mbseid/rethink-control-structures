@@ -1,0 +1,20 @@
+{
+  "name": "rethink-control-structures",
+  "version": "1.0.0",
+  "description": "Code examples for the Rethink Control Structures presentation at the RethinkDB SF Meetup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "rethinkdb",
+    "rethink"
+  ],
+  "author": "Michael Seid <mbseid@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^1.4.2",
+    "lodash": "^3.10.1",
+    "rethinkdb": "^2.1.1"
+  }
+}
