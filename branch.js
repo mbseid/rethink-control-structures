@@ -14,7 +14,7 @@ var async = require('async');
  * [connection variable that holds the connection to rethinkdb]
  *
  * Connect to the local RethinkDB instance and run our function once the
- * connection is complete. If an error is throw, propigate it up.
+ * connection is complete. If an error is throw, propagate it up.
  */
 var connection = null;
 r.connect({
@@ -27,8 +27,8 @@ r.connect({
 })
 
 /**
- * Imagine a probe flying around space collecting information on planets it flys by. During
- * it's purpetual journey through space, it will either find new planets, or update the planets
+ * Imagine a probe flying around space collecting information on planets it flies by. During
+ * it's perpetual journey through space, it will either find new planets, or update the planets
  * latest reading. 
  *
  * This is a perfect use case of RethinkDB branches. We will try to find the planet, and update
@@ -37,7 +37,7 @@ r.connect({
  */
 var run = function() {
     /**
-     * After flying by a planet, the proble will scan the planet's molicules. This hash will be
+     * After flying by a planet, the probe will scan the planet's molecules. This hash will be
      * unique, and for the sake of the demo it will be easy to read integers
      *
      * The first planet flown by is Tatooine

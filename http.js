@@ -14,7 +14,7 @@ var async = require('async');
  * [connection variable that holds the connection to rethinkdb]
  *
  * Connect to the local RethinkDB instance and run our function once the
- * connection is complete. If an error is throw, propigate it up.
+ * connection is complete. If an error is throw, propagate it up.
  */
 var connection = null;
 r.connect({
@@ -31,13 +31,13 @@ r.connect({
  * the drone sends back information to our system, we will have to send it to an endpoint provided
  * to us by the Imperial army. 
  *
- * This is a great usecase of the RethinkDB Http command. Instead of persisting in our DB and then
- * sending the new information to Imperial army, we can have our databse do it for us! Less round
+ * This is a great use-case of the RethinkDB Http command. Instead of persisting in our DB and then
+ * sending the new information to Imperial army, we can have our database do it for us! Less round
  * trips the better.
  */
 var run = function() {
   /**
-   * The drone has just found me! I will be persited in the database and reported to the Imperial
+   * The drone has just found me! I will be persisted in the database and reported to the Imperial
    * army. Luckily, I have nothing to hide, but I wish they didn't require it.
    */
 

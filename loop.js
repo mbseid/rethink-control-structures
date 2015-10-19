@@ -14,7 +14,7 @@ var async = require('async');
  * [connection variable that holds the connection to rethinkdb]
  *
  * Connect to the local RethinkDB instance and run our function once the
- * connection is complete. If an error is throw, propigate it up.
+ * connection is complete. If an error is throw, propagate it up.
  */
 var connection = null;
 r.connect({
@@ -31,7 +31,7 @@ r.connect({
  * As our system has grown and we have discovered more starships, we need to do some optimizations
  * to keep queries running fast. We have discovered so many starships that finding pilots who can fly
  * them has become burdensome. Let's mark all the people who are pilots so they can be easily found
- * to poilot other ships.
+ * to pilot other ships.
  *
  * We will denormalize that relationship for the sake of performance and run that migration using a
  * forEach loop. 
