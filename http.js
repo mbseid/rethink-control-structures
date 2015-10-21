@@ -64,6 +64,4 @@ var run = function() {
     console.log("Successfully reported to the Imperial Army.", data);
     process.exit();
   })
-
-
 }

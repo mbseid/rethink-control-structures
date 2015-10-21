@@ -38,7 +38,7 @@ r.connect({
  */
 var run = function() {
   r.table('starships').forEach(function(ship) {
-    return ship('pilots').coerceTo('array').forEach(function(pilot) {
+    return ship('pilots').forEach(function(pilot) {
       return r.table('people').get(pilot).update({
         pilot: true
       })
@@ -48,7 +48,7 @@ var run = function() {
       pilot: true
     }).run(connection, function(err, data) {
       data.toArray(function(err, pilots) {
-        console.log("Newly declared pilots: " + pilots.length, pilots)
+        console.log("Newly declared pilots: " + pilots.length, pilots[0])
         process.exit();
       });
 
